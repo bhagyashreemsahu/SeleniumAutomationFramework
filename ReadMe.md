@@ -9,7 +9,7 @@
 
 ## Features
 
-- Performs UI  Automated Tests for Amazon login and search functionality
+- Performs UI  Automated Tests for login and search functionality
 - Can be Integrated with Jenkins CI for Continious Testing for UI Component 
 - Categorizing the Tests in  TestNG 
 - Performs Parallel Testing and Isolated Tests
