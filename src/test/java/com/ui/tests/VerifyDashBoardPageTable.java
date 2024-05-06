@@ -17,7 +17,7 @@ public class VerifyDashBoardPageTable {
 	private LoginPage page;
 	private String sKeyword ;
 
-	@BeforeMethod(description = "Setup the Browser and load the page")
+	@BeforeMethod(description = "Setup the Browser and load the page", alwaysRun = true)
 	public void setup() {
 		wd = new ChromeDriver();
 		page = new LoginPage(wd);
