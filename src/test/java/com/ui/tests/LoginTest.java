@@ -22,9 +22,10 @@ public class LoginTest {
 		page = new LoginPage(wd);
 	}
 
-	@Test(groups = { "sanity" })
-	//@Test(groups = { "sanity" },dataProvider = "LoginEXCELDATA")
-	public void testLoginForWebSite() {
-		Assert.assertEquals(page.doLogin("testuser02052024@gmail.com", "TestUser").getUserName(), "Hello, TestUser");
+	@Test(groups = { "sanity" },dataProviderClass = com.dataproviders.LoginDataProvider.class,dataProvider = "LoginEXCELDATA") 
+	
+	public void testLoginForWebSite(String userName, String password) {
+		Assert.assertEquals(page.doLogin(userName,password).getUserName(), "Hello, TestUser");
 	}
+
 }
