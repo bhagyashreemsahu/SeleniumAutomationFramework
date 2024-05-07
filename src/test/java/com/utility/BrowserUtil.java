@@ -65,10 +65,18 @@ public abstract class BrowserUtil {
 	}
 	
 	
-	
-	  public void sleepFor(int seconds) { try { Thread.sleep(seconds * 1000); }
-	  catch (InterruptedException e) { // TODO Auto-generated catch block
-	  e.printStackTrace(); } }
+	public void searchResult(By locator) {
+		 // Find all search result elements 
+             List<WebElement> searchResults = wd.findElements(locator);
+                 // Print the number of search results
+            System.out.println("Number of visible search results for Product : " + searchResults.size());
+                // Validate if search results are displayed
+           if (searchResults.size() > 0) { 
+            System.out.println("Search results are displayed successfully.");
+           } else {
+           System.out.println("No search results found.");
+           }
+	}
 	 
 
 	public static String takeScreenShot(String testName) {
