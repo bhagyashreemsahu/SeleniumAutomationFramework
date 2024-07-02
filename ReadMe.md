@@ -60,8 +60,5 @@ mvn -Dexec.classpathScope=test  -Dexec.arguments="api,sanity" test-compile  exec
 
 
 
-ALlure report (recorded)
-
-Logging log4j (recorded)
 
 
