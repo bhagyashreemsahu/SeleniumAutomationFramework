@@ -58,5 +58,5 @@ Maven Plugins used in the Project
 mvn -Dexec.classpathScope=test  -Dexec.arguments="api,sanity" test-compile  exec:java -Dexec.cleanupDaemonThreads=false -X
 ```
 
-
+### To Run the Automated Test for TestNG from cli...
 
